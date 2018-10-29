@@ -32,7 +32,7 @@ public class ID {
             System.out.println("Correct ID!");
             int reg = alphabet.indexOf(id.charAt(0));
             int gender = Integer.parseInt("" + id.charAt(1));
-            System.out.printf("The %s friend born in %s \n", (gender == 1) ? "male" : "female", region[reg]);
+            System.out.printf("The %s friend born in %s \n\n", (gender == 1) ? "male" : "female", region[reg]);
         } else if (m.matches() && !decrypt(id)) {
             System.out.println("Wrong ID!\n");
         } else {
