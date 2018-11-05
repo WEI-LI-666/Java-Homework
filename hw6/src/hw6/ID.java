@@ -23,20 +23,29 @@ public class ID {
         "Huaien County", "Taitung County", "Kinmen County", "Penghu County",
         "Yangmingshan Administrative Bureau", "Lienchiang County"};
     private final int[] num = {10, 11, 12, 13, 14, 15, 16, 17, 34, 18, 19, 20, 21, 22, 35, 23, 24, 25, 26, 27, 28, 29, 32, 30, 31, 33};
+    public static boolean CORRECT = true;
 
-    public void check(String id) {
+    public String check(String id) {
         Pattern p = Pattern.compile("[A-Z][1-2]\\d{8}");    //regex
         Matcher m = p.matcher(id);
 
         if (m.matches() && decrypt(id)) {
-            System.out.println("Correct ID!");
+            //System.out.println("Correct ID!");
             int reg = alphabet.indexOf(id.charAt(0));
             int gender = Integer.parseInt("" + id.charAt(1));
-            System.out.printf("The %s friend born in %s \n\n", (gender == 1) ? "male" : "female", region[reg]);
+            //System.out.printf("The %s friend born in %s \n\n", (gender == 1) ? "male" : "female", region[reg]);
+            ID.CORRECT = true;
+            return region[reg] + " " + ((gender == 1) ? "male" : "female");
+                    
         } else if (m.matches() && !decrypt(id)) {
-            System.out.println("Wrong ID!\n");
+            //System.out.println("Wrong ID!\n");
+            ID.CORRECT = false;
+            return "Wrong ID!";
+            
         } else {
-            System.out.println("Wrong Fromat!\n");
+            //System.out.println("Wrong Fromat!\n");
+            ID.CORRECT = false;
+            return "Wrong Fromat!";
         }
     }
 

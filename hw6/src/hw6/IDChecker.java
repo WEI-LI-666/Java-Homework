@@ -5,8 +5,15 @@
  */
 package hw6;
 
-import java.util.regex.*;
-import java.util.Scanner;
+import hw6.ID;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.net.URISyntaxException;
+import java.net.URL;
 
 /**
  *
@@ -17,31 +24,62 @@ public class IDChecker {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws URISyntaxException {
 
-        Pattern p = Pattern.compile("[0-1]");
         ID idVer = new ID();
 
-        while (true) {
-            System.out.println("*************");
-            System.out.printf("%1d.\tVerify ID\n", 1);
-            System.out.printf("%1d.\tExit\n", 0);
-            System.out.println("*************");
-            System.out.printf("Please select: ");
-
-            Scanner scan = new Scanner(System.in);
-            String select = scan.nextLine();
-            Matcher m = p.matcher(select);
-
-            if (!m.matches()) {
-                System.out.println("Wrong command! Please type it again!");
-            } else if (select.equals("0")) {   // Select 0 then break 
-                break;
-            } else {    // Go into ID Verification
-                System.out.printf("\nPlease enter the ID: ");
-                String in = scan.nextLine();
-                idVer.check(in);
+        URL path = IDChecker.class.getResource("input.txt");
+        FileReader fr = null;
+        BufferedReader br = null;
+        FileWriter cfw = null;
+        FileWriter efw = null;
+        BufferedWriter cbw = null;
+        BufferedWriter ebw = null;
+        File inF, cF, eF = null;
+        if(path == null){
+            System.out.println("File not found.");
+        } else {
+            try {
+                inF = new File(path.toURI());
+                fr = new FileReader(inF);
+                br = new BufferedReader(fr);
+                
+                String cLine;
+                cF = new File("correct.txt");
+                eF = new File("error.txt");
+                if(!cF.exists()) cF.createNewFile();
+                if(!eF.exists()) eF.createNewFile();
+                cfw = new FileWriter(cF, false);
+                cbw = new BufferedWriter(cfw);
+                efw = new FileWriter(eF, false);
+                ebw = new BufferedWriter(efw);
+                while(br.ready()){
+                    cLine = br.readLine();
+                    System.out.println(cLine);
+                    try {                       
+                        idVer.check(cLine);
+                        if(ID.CORRECT){
+                            cbw.write(cLine + ",\t" + idVer.check(cLine));
+                            cbw.newLine();
+                        } else {
+                            ebw.write(cLine + ",\t" + idVer.check(cLine));
+                            ebw.newLine();
+                        }
+                    } catch (IOException ew) {
+                        ew.printStackTrace();
+                    }
+                }
+                cbw.close();
+                ebw.close();
+                cfw.close();
+                efw.close();
+                br.close();
+                fr.close();
+            } catch (IOException e) {
+                e.printStackTrace();
             }
         }
+        
+
     }
 }
