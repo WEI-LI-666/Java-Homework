@@ -28,7 +28,8 @@ public class IDChecker {
 
         ID idVer = new ID();
 
-        URL path = IDChecker.class.getResource("input.txt");
+        //URL path = IDChecker.class.getResource("input.txt");
+        
         FileReader fr = null;
         BufferedReader br = null;
         FileWriter cfw = null;
@@ -36,29 +37,30 @@ public class IDChecker {
         BufferedWriter cbw = null;
         BufferedWriter ebw = null;
         File inF, cF, eF = null;
-        if(path == null){
-            System.out.println("File not found.");
-        } else {
-            try {
-                inF = new File(path.toURI());
+        try {
+                inF = new File("input.txt");
                 fr = new FileReader(inF);
                 br = new BufferedReader(fr);
-                
+
                 String cLine;
                 cF = new File("correct.txt");
                 eF = new File("error.txt");
-                if(!cF.exists()) cF.createNewFile();
-                if(!eF.exists()) eF.createNewFile();
+                if (!cF.exists()) {
+                    cF.createNewFile();
+                }
+                if (!eF.exists()) {
+                    eF.createNewFile();
+                }
                 cfw = new FileWriter(cF, false);
                 cbw = new BufferedWriter(cfw);
                 efw = new FileWriter(eF, false);
                 ebw = new BufferedWriter(efw);
-                while(br.ready()){
+                while (br.ready()) {
                     cLine = br.readLine();
-                    System.out.println(cLine);
-                    try {                       
+                    //System.out.println(cLine);
+                    try {
                         idVer.check(cLine);
-                        if(ID.CORRECT){
+                        if (ID.CORRECT) {
                             cbw.write(cLine + ",\t" + idVer.check(cLine));
                             cbw.newLine();
                         } else {
@@ -78,8 +80,6 @@ public class IDChecker {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-        }
-        
 
     }
 }

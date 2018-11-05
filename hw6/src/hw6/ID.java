@@ -36,12 +36,12 @@ public class ID {
             //System.out.printf("The %s friend born in %s \n\n", (gender == 1) ? "male" : "female", region[reg]);
             ID.CORRECT = true;
             return region[reg] + " " + ((gender == 1) ? "male" : "female");
-                    
+
         } else if (m.matches() && !decrypt(id)) {
             //System.out.println("Wrong ID!\n");
             ID.CORRECT = false;
             return "Wrong ID!";
-            
+
         } else {
             //System.out.println("Wrong Fromat!\n");
             ID.CORRECT = false;
