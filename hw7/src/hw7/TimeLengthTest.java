@@ -28,7 +28,7 @@ public class TimeLengthTest {
             showMenu();
             System.out.printf("Please enter a number in [1,2,3,0]: ");
             in = scan.nextLine();
-            if(inputCheck(in, 1) == 0){ System.out.println("Wrong command!");continue; }
+            if(inputCheck(in, 1) == 0){ System.out.println("Wrong command!\n");continue; }
             if(inputCheck(in, 1) == 1){
                 select = Integer.parseInt(in);
                 if(select == 0){
@@ -40,6 +40,7 @@ public class TimeLengthTest {
                     tL.showTimeInHMS();
                     System.out.println("");
                 } else {
+                    /* Set or adjust the length of time. */
                     System.out.printf("Please enter a time (seconds or hh:mm:ss): ");
                     in = scan.nextLine();
                     if(inputCheck(in, 2) == 0){
@@ -92,7 +93,7 @@ public class TimeLengthTest {
     public static int inputCheck(String input, int type){
         Pattern p1 = Pattern.compile("[0-3]");                      /* For user's option */
         Pattern p2 = Pattern.compile("\\-?[1-9]\\d*");               /* For converted to second format */
-        Pattern p3 = Pattern.compile("\\-?\\d{2}\\:\\d{2}\\:\\d{2}");  /* For hh:mm:ss format */
+        Pattern p3 = Pattern.compile("\\-?\\d{2,}\\:\\d{2}\\:\\d{2}");  /* For hh:mm:ss format */
         
         if(p1.matcher(input).matches() && type == 1) return 1;
         if(p2.matcher(input).matches() && type == 2) return 2;
