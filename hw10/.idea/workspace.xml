@@ -21,10 +21,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hw9/Time.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hw10/Time.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="153">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -33,22 +33,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hw9/TimeFormatException.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hw10/TimeFormatException.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
               <caret line="17" selection-start-line="17" selection-end-line="17" />
-              <folding>
-                <element signature="e#0#277#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hw9/AlarmClock.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hw10/AlarmClock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
-              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+            <state relative-caret-position="170">
+              <caret line="12" column="46" lean-forward="true" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,6 +75,9 @@
         <option value="$PROJECT_DIR$/src/hw9/TimeTest.java" />
         <option value="$PROJECT_DIR$/src/hw9/AlarmClock.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/hw9/AlarmClock.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hw9/Time.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hw10/Time.java" />
       </list>
     </option>
   </component>
@@ -85,6 +85,7 @@
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="dedicatedModuleDir" value="C:\Users\User\Documents\IntelliJ Java\hw9" />
+        <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
   </component>
@@ -120,39 +121,44 @@
         <subPane>
           <expand>
             <path>
-              <item name="hw9" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hw9" type="462c0819:PsiDirectoryNode" />
+              <item name="hw10" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hw10" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="hw9" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hw9" type="462c0819:PsiDirectoryNode" />
+              <item name="hw10" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hw10" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="hw9" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hw9" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hw9" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hw9" type="462c0819:PsiDirectoryNode" />
+              <item name="hw10" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hw10" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="hw9" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hw9" type="462c0819:PsiDirectoryNode" />
+              <item name="hw10" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hw10" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hw9" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="hw9" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hw9" type="462c0819:PsiDirectoryNode" />
+              <item name="hw10" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hw10" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hw10" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hw10" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hw10" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hw10" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="hw10" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -168,12 +174,13 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543764624737" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543765978710" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
     <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -204,11 +211,11 @@
   </component>
   <component name="RunManager">
     <configuration name="AlarmClock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hw9.AlarmClock" />
-      <module name="hw9" />
+      <option name="MAIN_CLASS_NAME" value="hw10.AlarmClock" />
+      <module name="hw10" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hw9.*" />
+          <option name="PATTERN" value="hw10.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -242,16 +249,18 @@
       <workItem from="1543762910861" duration="382000" />
       <workItem from="1543763616699" duration="36000" />
       <workItem from="1543763673680" duration="1047000" />
+      <workItem from="1543765775256" duration="115000" />
+      <workItem from="1543765951707" duration="47000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15684000" />
+    <option name="totallyTimeSpent" value="15846000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2739872" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2803838" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -310,27 +319,7 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/hw9/TimeTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/hw9/Time.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hw9/TimeFormatException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#0#277#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hw9.iml">
+    <entry file="file://$PROJECT_DIR$/hw10.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -340,10 +329,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hw9/AlarmClock.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/hw10/Time.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        <state relative-caret-position="153">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hw10/TimeFormatException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hw10/AlarmClock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="46" lean-forward="true" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

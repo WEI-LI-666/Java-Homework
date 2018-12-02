@@ -2,7 +2,7 @@
  * Copyright (c) 11.2018.  by Willy
  */
 
-package hw9;
+package hw10;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -16,7 +16,7 @@ public class Time {
         this.ss = ss;
     }
 
-    public void countDown(){
+    public void countDown() {
         int ihh, imm, iss;
         ihh = Integer.parseInt(this.hh);
         imm = Integer.parseInt(this.mm);
@@ -34,26 +34,26 @@ public class Time {
         int timeH = (int) (timeMS / (60 * 60 * 1000));
 
         /* Clock time offset */
-        if(timeS < 0){
+        if (timeS < 0) {
             timeS += 60;
             timeM -= 1;
         }
-        if(timeM < 0){
+        if (timeM < 0) {
             timeM += 60;
             timeH -= 1;
         }
-        if(timeH < 0) timeH += 24;
+        if (timeH < 0) timeH += 24;
 
         /* Output string */
         String output = "The alarm starts after ";
 
-        if(timeH != 0) output += (timeH + " hours ");
-        if(timeM != 0 && timeS != 0 || timeH == 0 && timeM != 0){
+        if (timeH != 0) output += (timeH + " hours ");
+        if (timeM != 0 && timeS != 0 || timeH == 0 && timeM != 0) {
             output += (timeM + " minutes ");
-        } else if (timeS == 0){
+        } else if (timeS == 0) {
             output += (" and " + timeM + " minutes ");
         }
-        if(timeH == 0 && timeM == 0){
+        if (timeH == 0 && timeM == 0) {
             output += (timeS + " seconds ");
         } else {
             output += (" and " + timeS + " seconds ");

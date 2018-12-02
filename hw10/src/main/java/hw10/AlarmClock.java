@@ -2,7 +2,7 @@
  * Copyright (c) 11.2018.  by Willy
  */
 
-package hw9;
+package hw10;
 
 import java.util.Calendar;
 import java.util.Scanner;
@@ -17,26 +17,28 @@ public class AlarmClock {
         Pattern pH = Pattern.compile("[0-2]\\d");   // Hour's regex
         Pattern pMS = Pattern.compile("[0-5]\\d");  // Minute's and Second's regex
 
-        do{
+        do {
             showDateTime();
             System.out.printf("Please set alarm time(hh:mm:ss): ");
-            try{
+            try {
                 input = scan.nextLine().split(":");
                 isFormatCorrect = true;
-                if(!pH.matcher(input[0]).matches()){
-                    throw new TimeFormatException("TimeFormatException: Invalid hour format");
+                if (!pH.matcher(input[0]).matches()) {
+                    if (Integer.parseInt(input[0]) > 23) {
+                        throw new TimeFormatException("TimeFormatException: Invalid hour format");
+                    }
                 }
-                if(!pMS.matcher(input[1]).matches()){
+                if (!pMS.matcher(input[1]).matches()) {
                     throw new TimeFormatException("TimeFormatException: Invalid minute format");
                 }
-                if(!pMS.matcher(input[2]).matches()){
+                if (!pMS.matcher(input[2]).matches()) {
                     throw new TimeFormatException("TimeFormatException: Invalid second format");
                 }
-            }catch (TimeFormatException tfe){
+            } catch (TimeFormatException tfe) {
                 System.out.println(tfe.getMessage() + "\n");
                 isFormatCorrect = false;
             }
-        }while (!isFormatCorrect);
+        } while (!isFormatCorrect);
 
         time = new Time(input[0], input[1], input[2]);
         showDateTime();
