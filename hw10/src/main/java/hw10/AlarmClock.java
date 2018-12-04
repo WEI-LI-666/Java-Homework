@@ -23,10 +23,8 @@ public class AlarmClock {
             try {
                 input = scan.nextLine().split(":");
                 isFormatCorrect = true;
-                if (!pH.matcher(input[0]).matches()) {
-                    if (Integer.parseInt(input[0]) > 23) {
-                        throw new TimeFormatException("TimeFormatException: Invalid hour format");
-                    }
+                if (!pH.matcher(input[0]).matches() || Integer.parseInt(input[0]) > 23) {
+                    throw new TimeFormatException("TimeFormatException: Invalid hour format");
                 }
                 if (!pMS.matcher(input[1]).matches()) {
                     throw new TimeFormatException("TimeFormatException: Invalid minute format");
