@@ -1,31 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d4997085-8f5d-48af-bc71-88307460dac3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw10/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw10/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw10/target/classes/hw10/AlarmClock.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw10/target/classes/hw10/Time.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw10/target/classes/hw10/TimeFormatException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hw11/FullTimeStudent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hw11/GraduateStudent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hw11/MasterStudent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hw11/PartTimeStudent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hw11/PhDStudent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hw11/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hw11/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hw11/StudentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hw11/StudentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hw11/UndergraduateStudent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hw11/FullTimeStudent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hw11/FullTimeStudent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hw11/GraduateStudent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hw11/GraduateStudent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hw11/MasterStudent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hw11/MasterStudent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hw11/PartTimeStudent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hw11/PartTimeStudent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hw11/PhDStudent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hw11/PhDStudent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hw11/StudentTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hw11/StudentTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hw11/UndergraduateStudent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hw11/UndergraduateStudent.class" afterDir="false" />
-    </list>
+    <list default="true" id="d4997085-8f5d-48af-bc71-88307460dac3" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -76,7 +52,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hw11/Student.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3204">
+            <state relative-caret-position="2916">
               <caret line="192" selection-start-line="192" selection-end-line="192" />
               <folding>
                 <element signature="e#2165#2166#0" expanded="true" />
@@ -273,16 +249,17 @@
       <updated>1543934219945</updated>
       <workItem from="1543934221374" duration="2931000" />
       <workItem from="1543991162445" duration="1109000" />
+      <workItem from="1543992373377" duration="8000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4040000" />
+    <option name="totallyTimeSpent" value="4048000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25290537" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2556724" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -322,83 +299,29 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/hw11/GraduateStudent.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/hw11/GraduateStudent.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/hw11/UndergraduateStudent.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/hw11/MasterStudent.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/hw11/PhDStudent.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/hw11/FullTimeStudent.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/hw11/PartTimeStudent.java" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" selection-start-line="2" selection-end-line="31" selection-end-column="1" />
-          <folding>
-            <element signature="e#431#432#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#491#492#0" expanded="true" />
-            <element signature="e#521#522#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="144">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hw11/UndergraduateStudent.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/hw11/StudentTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="30" selection-end-column="5" />
-          <folding>
-            <element signature="e#389#390#0" expanded="true" />
-            <element signature="e#419#420#0" expanded="true" />
-            <element signature="e#451#452#0" expanded="true" />
-            <element signature="e#479#480#0" expanded="true" />
-            <element signature="e#513#514#0" expanded="true" />
-            <element signature="e#543#544#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hw11/MasterStudent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="27" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hw11/PhDStudent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="27" selection-end-column="1" />
-          <folding>
-            <element signature="e#411#412#0" expanded="true" />
-            <element signature="e#441#442#0" expanded="true" />
-            <element signature="e#480#481#0" expanded="true" />
-            <element signature="e#515#516#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hw11/FullTimeStudent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="28" />
-          <folding>
-            <element signature="e#383#384#0" expanded="true" />
-            <element signature="e#410#411#0" expanded="true" />
-            <element signature="e#441#442#0" expanded="true" />
-            <element signature="e#468#469#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hw11/PartTimeStudent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="28" />
-          <folding>
-            <element signature="e#415#416#0" expanded="true" />
-            <element signature="e#445#446#0" expanded="true" />
-            <element signature="e#480#481#0" expanded="true" />
-            <element signature="e#511#512#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="72">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hw11/Student.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3204">
+        <state relative-caret-position="2916">
           <caret line="192" selection-start-line="192" selection-end-line="192" />
           <folding>
             <element signature="e#2165#2166#0" expanded="true" />
@@ -418,20 +341,6 @@
             <element signature="e#4442#4443#0" expanded="true" />
             <element signature="e#4473#4474#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hw11/StudentTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
         </state>
       </provider>
     </entry>
