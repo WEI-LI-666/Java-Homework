@@ -92,11 +92,20 @@ class Student extends Person implements Study {
 class TeachingAssistant extends Student implements Work{
     private String department;
     private double salary;
+    private String course;
 
     public TeachingAssistant(String name, String major, String degree, String department, double salary) {
         super(name, major, degree);
         this.department = department;
         this.salary = salary;
+    }
+
+    public String getCourse() {
+        return course;
+    }
+
+    public void setCourse(String course) {
+        this.course = course;
     }
 
     public void setDepartment(String department) {
@@ -119,7 +128,7 @@ class TeachingAssistant extends Student implements Work{
     public String toString() {
         return "TA name = " + getName() + ",\n" +
                 "who studies in " + getMajor() + ",\n" +
-                "whose degree is " + getDegree() + ".\n" +
+                "whose degree is " + getDegree() + ",\n" +
                 "who works in " + getDepartment() + ",\n" +
                 "whose salary is " + (int) getSalary() + ".\n";
     }
