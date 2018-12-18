@@ -8,15 +8,19 @@ public class Contact implements Comparable<Contact> {
     private String email;
     private Date birthday;
 
-    public Contact(String name, String phone, String email, Date birthday) {
+    public Contact(String name, Date birthday, String phone, String email) {
         this.name = name;
+        this.birthday = birthday;
         this.phone = phone;
         this.email = email;
-        this.birthday = birthday;
     }
 
     public String getName() {
         return name;
+    }
+
+    public Date getBirthday() {
+        return birthday;
     }
 
     public String getPhone() {
@@ -27,12 +31,12 @@ public class Contact implements Comparable<Contact> {
         return email;
     }
 
-    public Date getBirthday() {
-        return birthday;
-    }
-
     public void setName(String name) {
         this.name = name;
+    }
+
+    public void setBirthday(Date birthday) {
+        this.birthday = birthday;
     }
 
     public void setPhone(String phone) {
@@ -41,10 +45,6 @@ public class Contact implements Comparable<Contact> {
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public void setBirthday(Date birthday) {
-        this.birthday = birthday;
     }
 
     public int compareTo(Contact o) {
