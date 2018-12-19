@@ -96,11 +96,11 @@ public class AddressBook {
     public void showContacts(){
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd");
         System.out.println();
-        System.out.println("Name\tBirthday\tPhone\t\t\t\tEmail");
+        System.out.println("Name\tBirthday\tPhone\t\t\tEmail");
         System.out.println("-----------------------------------------------");
         for(Map.Entry<String, Contact> contact : contacts.entrySet()){
-            System.out.printf("%s\t%s\t%s\t%s\n", contact.getValue().getName(),
-                    sdf.format(contact.getValue().getBirthday()), contact.getValue().getEmail(), contact.getValue().getPhone());
+            System.out.printf("%4s\t%s\t%s\t%5s\n", contact.getValue().getName(),
+                    sdf.format(contact.getValue().getBirthday()), contact.getValue().getPhone(), contact.getValue().getEmail());
         }
         System.out.println();
     }
