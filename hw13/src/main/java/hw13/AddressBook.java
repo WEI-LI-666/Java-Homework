@@ -71,6 +71,7 @@ public class AddressBook {
     public void addContact(){
         Scanner scan = new Scanner(System.in);
 
+        System.out.println();
         System.out.printf("Name: ");
         String name = scan.nextLine();
         System.out.printf("Phone: ");
@@ -128,19 +129,21 @@ public class AddressBook {
                     pe.printStackTrace();
                 }
                 System.out.println("The contact has been changed.\n");
-            } else {
-                System.out.println("Not found!\n");
             }
+        } else {
+            System.out.println("Not found!\n");
         }
     }
 
     public void deleteContact(){
+        System.out.println();
         System.out.println("Please enter the name of contact that you want to delete.");
         System.out.printf("Name: ");
         Scanner scan = new Scanner(System.in);
         String name = scan.nextLine();
         if(contacts.containsKey(name)){
             contacts.remove(name);
+            System.out.println("The contact has been deleted.\n");
         } else {
             System.out.println("Not found!\n");
         }
@@ -197,6 +200,8 @@ public class AddressBook {
     }
 
     public static boolean isValidFormat(String name, String phone, String email, String birthday){
+        //String REGEX_EMAIL = "(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|\"(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21\\x23-\\x5b\\x5d-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])*\")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21-\\x5a\\x53-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])+)\\])";
+
         if(!name.matches("[a-zA-z]+")){
             System.out.println("Invalid name format!\n");
             return false;
